@@ -20,6 +20,7 @@
 /// @brief main entry point
 int main( void )
 {
+	//t.start();
 	// Core instance
 	Core core;
 
@@ -37,4 +38,10 @@ int main( void )
 	// ResourceManager destructor also deletes Shaders.
 
 	return 0;
+
+	/* void Cube::update(float deltaTime) {
+
+		int freq = 1;
+		int ampl = 7;
+		rotation.y = 5 + (sin(t.seconds() * freq) * ampl); */
 }
