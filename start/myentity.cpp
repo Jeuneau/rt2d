@@ -52,37 +52,5 @@ void MyEntity::update(float deltaTime)
 
 
 
-	int health;
-	health = 0;
-
-	if (health <= 0) {
-		Destroy Player;
-
-	}
-
-	else {
-		Player.isAlive
-	}
 
 
-
-
-	list<bullets>
-
-		Player() {
-	}
-	BulletShoot() {
-
-	}
-
-	void Move() {
-
-	}
-}
-
-
-int main(void) {
-
-}
-
-*/
