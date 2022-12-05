@@ -50,7 +50,7 @@ void MyEntity::update(float deltaTime)
 	if (position.y > SHEIGHT) { position.y = 0; }
 }
 
-/*class player {
+
 
 	int health;
 	health = 0;
