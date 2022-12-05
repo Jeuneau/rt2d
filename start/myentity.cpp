@@ -49,3 +49,40 @@ void MyEntity::update(float deltaTime)
 	if (position.y < 0) { position.y = SHEIGHT; }
 	if (position.y > SHEIGHT) { position.y = 0; }
 }
+
+/*class player {
+
+	int health;
+	health = 0;
+
+	if (health <= 0) {
+		Destroy Player;
+
+	}
+
+	else {
+		Player.isAlive
+	}
+
+
+
+
+	list<bullets>
+
+		Player() {
+	}
+	BulletShoot() {
+
+	}
+
+	void Move() {
+
+	}
+}
+
+
+int main(void) {
+
+}
+
+*/
