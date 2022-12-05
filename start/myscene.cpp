@@ -30,7 +30,7 @@ MyScene::MyScene() : Scene()
 	
 	// delete when you're done with it.
 	myentity = new MyEntity();
-	myentity->position = Point2(SWIDTH/2, SHEIGHT/2); 
+	myentity->position = Point2(SWIDTH/8, SHEIGHT/8); 
 
 
 
@@ -51,7 +51,7 @@ MyScene::~MyScene()
 	
 }
 
-class player {
+/*class player {
 
 	int health;
 	health = 0;
@@ -86,33 +86,8 @@ int main(void) {
 
 }
 
-void Scene03::updateSpaceShip(float deltaTime)
-{
-	spaceship->line()->color = WHITE;
-
-	float rotspeed = 3.14f;
-
-	static Vector2 velocity = Vector2((rand() % 100) - 50, (rand() % 100) - 50);
-	static Polar polar = Polar((rand() % 360) * DEG_TO_RAD, 400.0f);
-
-	if (input()->getKey(KeyCode::Up)) {
-		spaceship->line()->color = RED;
-		velocity += polar.cartesian() * deltaTime; // thrust
-	}
-	if (input()->getKey(KeyCode::Right)) {
-		polar.angle += rotspeed * deltaTime; // rotate right
-	}
-	if (input()->getKey(KeyCode::Left)) {
-		polar.angle -= rotspeed * deltaTime; // rotate left
-	}
-
-	spaceship->rotation.z = polar.angle;
-	spaceship->position += velocity * deltaTime;
-
-	if (spaceship->position.x < 0) { spaceship->position.x = SWIDTH; }
-	if (spaceship->position.x > SWIDTH) { spaceship->position.x = 0; }
-	if (spaceship->position.y < 0) { spaceship->position.y = SHEIGHT; }
-	if (spaceship->position.y > SHEIGHT) { spaceship->position.y = 0; }
+*/
+	
 
 void MyScene::update(float deltaTime)
 {
