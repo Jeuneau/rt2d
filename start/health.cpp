@@ -1,7 +1,6 @@
 #include "Health.h"
 
 Health::Health() {
-	// initialize the score to 0
 	health = 10;
 
 	// draw the text
