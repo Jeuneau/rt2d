@@ -10,6 +10,8 @@ MyEntity::MyEntity() : Entity()
 {
 	this->addSprite("assets/square.tga");
 	this->sprite()->color = RED;
+
+	health = 100;
 }
 
 MyEntity::~MyEntity()
