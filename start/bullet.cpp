@@ -1,24 +1,27 @@
-#include <list>
+#include <vector>
+#include <string>
 
-class Bullet {
+using namespace std;
 
-	list<string> Bullets;
-	/*Bullets.push_back("Bullet1");
-	Bullets.push_front("Bullet2"); */
+int main() {
 
-	list<string>::iterator itr;
-	itr = Bullets.begin();
+	vector<string> bullets;
+	bullets.push_back("Bullet1");
+	bullets.push_back("Bullet2"); 
 
-	while(*itr != "Bullet1") {
-		itr++;
-	}
-	delete itr;
-	Bullets.erase(itr);
-	
+	//list<string>::iterator itr;
+	//itr = bullets.begin();
 
-	for (itr= Bullets.begin(); itr != Bullets.end(); itr++) {
-		cout << *itr << endl;
-	}
+	//while(*itr != "Bullet1") {
+	//	itr++;
+	//}
+	//delete itr;
+	//bullets.erase(itr);
+	//
+
+	//for (itr= bullets.begin(); itr != bullets.end(); itr++) {
+	//	cout << *itr << endl;
+	//}
 
 	return 0;
 

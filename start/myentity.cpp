@@ -54,5 +54,5 @@ void MyEntity::update(float deltaTime)
 
 
 
-
+//shoot method
 

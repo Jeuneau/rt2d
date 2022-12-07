@@ -6,12 +6,10 @@
 
 #include <fstream>
 #include <sstream>
-
 #include "myscene.h"
-
-
-
-
+#include <vector>
+#include <string>
+using namespace std;
 
 
 
@@ -37,6 +35,14 @@ MyScene::MyScene() : Scene()
 	// create the scene 'tree'
 	// add myentity to this Scene as a child.
 	this->addChild(myentity);
+
+	//bullet list
+
+		vector<string> bullets;
+		bullets.push_back("Bullet1");
+		bullets.push_back("Bullet2");
+
+		//return 0;
 }
 
 
@@ -51,42 +57,7 @@ MyScene::~MyScene()
 	
 }
 
-/*class player {
 
-	int health;
-	health = 0;
-
-	if (health <= 0) {
-		Destroy Player;
-
-	}
-
-	else {
-		Player.isAlive
-	}
-
-
-
-
-	list<bullets>
-
-		Player() {
-	}
-	BulletShoot() {
-
-	}
-
-	void Move() {
-
-	}
-}
-
-
-int main(void) {
-
-}
-
-*/
 	
 
 void MyScene::update(float deltaTime)
