@@ -3,8 +3,8 @@
 class Bullet {
 
 	list<string> Bullets;
-	Bullets.push_back("Bullet1");
-	Bullets.push_front("Bullet2");
+	/*Bullets.push_back("Bullet1");
+	Bullets.push_front("Bullet2"); */
 
 	list<string>::iterator itr;
 	itr = Bullets.begin();
