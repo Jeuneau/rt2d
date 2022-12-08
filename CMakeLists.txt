@@ -138,7 +138,7 @@ add_library(rt2d
 	rt2d/util.c
 	rt2d/util.h
 	rt2d/vectorx.h
-   "start/bullet.cpp")
+   )
 file(
 	COPY ${CMAKE_SOURCE_DIR}/rt2d/shaders
 	DESTINATION ${CMAKE_BINARY_DIR}
@@ -158,7 +158,7 @@ IF(MAKE_START)
 		start/myentity.h
 		start/myscene.cpp
 		start/myscene.h
-	   "start/bullet.cpp")
+	   )
 	target_link_libraries(start
 		${ALL_GRAPHICS_LIBS}
 	)
@@ -211,7 +211,7 @@ IF(MAKE_DEMO)
 		projects/demo/scene23.h
 		projects/demo/superscene.cpp
 		projects/demo/superscene.h
-	   "start/bullet.cpp")
+	   )
 	target_link_libraries(demo
 		${ALL_GRAPHICS_LIBS}
 	)
@@ -253,7 +253,7 @@ IF(MAKE_CANVAS_DEMO)
 		projects/canvasdemo/scene20.h
 		projects/canvasdemo/superscene.cpp
 		projects/canvasdemo/superscene.h
-	   "start/bullet.cpp")
+	   )
 	target_link_libraries(canvasdemo
 		${ALL_GRAPHICS_LIBS}
 	)
@@ -274,7 +274,7 @@ IF(MAKE_BASIC3D)
 		projects/basic3D/cube.h
 		projects/basic3D/myscene.cpp
 		projects/basic3D/myscene.h
-	   "start/bullet.cpp")
+	   )
 	target_link_libraries(basic3D
 		${ALL_GRAPHICS_LIBS}
 	)
@@ -294,7 +294,7 @@ IF(MAKE_NOISE)
 		projects/perlinnoise/main.cpp
 		projects/perlinnoise/myscene.cpp
 		projects/perlinnoise/myscene.h
-	   "start/bullet.cpp")
+	   )
 	target_link_libraries(noise
 		${ALL_GRAPHICS_LIBS}
 	)
@@ -310,7 +310,7 @@ IF(MAKE_GEOMETRIC)
 		projects/geometric/geometric.h
 		projects/geometric/myscene.cpp
 		projects/geometric/myscene.h
-	   "start/bullet.cpp")
+	   )
 	target_link_libraries(geometric
 		${ALL_GRAPHICS_LIBS}
 	)
@@ -326,7 +326,7 @@ IF(MAKE_SHADY)
 		projects/slimshady/myentity.h
 		projects/slimshady/myscene.cpp
 		projects/slimshady/myscene.h
-	   "start/bullet.cpp")
+	   )
 	target_link_libraries(slimshady
 		${ALL_GRAPHICS_LIBS}
 	)
@@ -351,7 +351,7 @@ IF(MAKE_FLOCKING)
 		projects/flocking/flock.cpp
 		projects/flocking/scene01.cpp
 		projects/flocking/main.cpp
-	   "start/bullet.cpp")
+	   )
 	target_link_libraries(flocking
 		${ALL_GRAPHICS_LIBS}
 	)
@@ -369,7 +369,7 @@ IF(MAKE_WOLFENSTEIN)
 	add_executable(wolfenstein
 		projects/wolfenstein/wolfenstein.cpp
 		projects/wolfenstein/main.cpp
-	   "start/bullet.cpp")
+	   )
 	target_link_libraries(wolfenstein
 		${ALL_GRAPHICS_LIBS}
 	)
@@ -385,7 +385,7 @@ IF(MAKE_COLLISION)
 		projects/collision/shape.h
 		projects/collision/myscene.cpp
 		projects/collision/myscene.h
-	   "start/bullet.cpp")
+	   )
 	target_link_libraries(collision
 		${ALL_GRAPHICS_LIBS}
 	)
@@ -399,7 +399,7 @@ IF(MAKE_DEBUGDRAW)
 		projects/debugdraw/main.cpp
 		projects/debugdraw/myscene.cpp
 		projects/debugdraw/myscene.h
-	   "start/bullet.cpp")
+	   )
 	target_link_libraries(debugdraw
 		${ALL_GRAPHICS_LIBS}
 	)
@@ -413,7 +413,7 @@ IF(MAKE_RAYCAST)
 		projects/raycast/main.cpp
 		projects/raycast/myscene.cpp
 		projects/raycast/myscene.h
-	   "start/bullet.cpp")
+	   )
 	target_link_libraries(raycast
 		${ALL_GRAPHICS_LIBS}
 	)
@@ -431,7 +431,7 @@ IF(MAKE_MATRIXPIXEL)
 		projects/matrixpixel/main.cpp
 		projects/matrixpixel/scene01.cpp
 		projects/matrixpixel/scene01.h
-	   "start/bullet.cpp")
+	   )
 	target_link_libraries(matrixpixel
 		${ALL_GRAPHICS_LIBS}
 	)
